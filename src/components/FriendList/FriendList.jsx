@@ -4,16 +4,16 @@ import styles from "./FriendList.module.scss";
 export const FriendList = ({ friends }) => (
   <ul className={styles.friendList}>
     {friends.map((friend) => (
-      <li key={friend.id} className="item">
+      <li key={friend.id} className={styles.item}>
         <span
-          className={`status ${friend.isOnline ? "online" : "offline"}`}></span>
+          className={`${styles.status} ${friend.isOnline ? styles.online : styles.offline}`}></span>
         <img
-          className="avatar"
+          className={styles.avatar}
           src={friend.avatar}
-          ale="User avatar"
+          alt="User avatar"
           width="48"
         />
-        <p className="name">{friend.name}</p>
+        <p className={styles.name}>{friend.name}</p>
       </li>
     ))}
   </ul>

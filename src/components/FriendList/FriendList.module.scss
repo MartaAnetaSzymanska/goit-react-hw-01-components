@@ -3,7 +3,10 @@
 }
 .item {
   margin: 10px 0;
-  text-align: center;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 300px;
   background-color: white;
